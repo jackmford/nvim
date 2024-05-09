@@ -100,7 +100,8 @@ local mappings = {
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   -- Nvim Tree
-  ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
+  ["e"] = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
+  ["E"] = { "<cmd>NvimTreeToggle<cr>", "ExplorerToggle" },
 
   -- Packer
   p = {
