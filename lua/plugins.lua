@@ -101,6 +101,7 @@ return packer.startup(function(use)
     }) -- Enhanced LSP UIs
     use("jose-elias-alvarez/typescript.nvim") -- Additional functionality for TypeScript server (e.g., rename file & update imports)
     use("onsails/lspkind.nvim") -- VSCode-like icons for autocompletion
+    use("voldikss/vim-floaterm")
     
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
