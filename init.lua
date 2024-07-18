@@ -22,7 +22,11 @@ vim.opt.termguicolors = true
 --require('lualine')
 
 -- empty setup using defaults
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+  view = {
+    width = 50,
+  },
+})
 
 
 require('lualine').setup()

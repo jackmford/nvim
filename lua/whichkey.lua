@@ -103,6 +103,7 @@ local mappings = {
   ["e"] = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
   ["E"] = { "<cmd>NvimTreeToggle<cr>", "ExplorerToggle" },
   ["t"] = { "<cmd>FloatermToggle<CR>", "Toggle Terminal"},
+  ["md"] = { "<Plug>MarkdownPreviewToggle", "Toggle Markdown Preview"},
 
   -- Packer
   p = {

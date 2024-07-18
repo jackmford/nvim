@@ -104,6 +104,14 @@ return packer.startup(function(use)
   use("onsails/lspkind.nvim")                 -- VSCode-like icons for autocompletion
   use("voldikss/vim-floaterm")
 
+    -- install without yarn or npm
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
+  
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
